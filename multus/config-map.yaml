@@ -7,7 +7,7 @@ metadata:
     tier: node
     app: multus
 data:
-  daemon-config.json: |
+  daemon-config.json: |-
     {
         "chrootDir": "/hostroot",
         "confDir": "/host/etc/cni/net.d",

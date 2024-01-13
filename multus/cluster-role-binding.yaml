@@ -7,6 +7,6 @@ roleRef:
   kind: ClusterRole
   name: multus
 subjects:
-  - kind: ServiceAccount
-    name: multus
-    namespace: kube-system
+- kind: ServiceAccount
+  name: multus
+  namespace: kube-system
