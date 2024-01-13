@@ -6,3 +6,14 @@ metadata:
     config.kubernetes.io/local-config: "true"
 info:
   description: multus description
+pipeline:
+  mutators:
+  - image: gcr.io/kpt-fn/set-image:v0.1.1
+    configMap:
+      name: ghcr.io/k8snetworkplumbingwg/multus-cni
+      newTag: v4.0.2
+  - image: gcr.io/kpt-fn/search-replace:unstable
+    configMap:
+      by-path: spec.template.spec.containers[0].resources.requests.memory
+      by-value: 50Mi
+      put-value: 200Mi
