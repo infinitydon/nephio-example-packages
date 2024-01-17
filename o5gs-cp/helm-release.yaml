@@ -14,7 +14,7 @@ spec:
       version: '0.0.1'
       sourceRef:
         kind: HelmRepository
-        name: o5gs-control-plane
+        name: o5gs
   releaseName: o5gs-cp
   values:
     multus:
