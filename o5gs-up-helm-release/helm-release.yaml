@@ -7,7 +7,7 @@ spec:
   interval: 10m
   targetNamespace: open5gs
   install:
-    createNamespace: true  
+    createNamespace: true
   chart:
     spec:
       chart: o5gs-user-plane
